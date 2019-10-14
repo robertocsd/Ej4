@@ -1,0 +1,18 @@
+
+
+
+
+.CUERPO{
+        display: flex;
+        flex-flow: row nowrap;
+        height: 100vh;
+        
+}
+.DIA1{
+    display: flex;
+    flex-flow: column;
+    margin-left: 5%;
+}
+.DIA1>h2{
+    align-self: center;
+}
