@@ -1,18 +1,110 @@
-
-
-
-
 .CUERPO{
         display: flex;
         flex-flow: row nowrap;
         height: 100vh;
-        
+        background-color: rgb(146, 237, 235);
+
 }
-.DIA1{
+.DIA{
     display: flex;
     flex-flow: column;
     margin-left: 5%;
+    background-color: #cbe4f9;
+    width: 100%;
 }
-.DIA1>h2{
-    align-self: center;
+img{
+ border-radius: 7%;
 }
+.DIA>p{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.DIA>h2{
+    justify-self: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+button#menu {
+	/* Ocultamos el boton en escritorio */
+    display: none;
+}
+
+button#menu:focus + nav#superior {
+	/* Si es pulsado el boton, mostramos el nav.
+	Esto lo puedo hacer porque adquiere el foco.
+	Solo funcionará, si el botón y el menú esta a la misma altura. */
+    display: block;
+}
+
+nav#superior ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    flex-direction: column;
+    background-color: #fff;
+
+    padding: 0;
+}
+
+nav#superior ul a {
+    display: block;
+    width: 8em;
+    text-decoration: none;
+    border: 1px solid #BE353D;
+    padding: .3em 0;
+    text-align: center;
+    color: #FA453B;
+    background: #EF8E76;
+    transition: 1s all;
+}
+
+nav#superior ul a:hover {
+    background: #ec7b5f;
+}
+
+@media all and (max-width: 700px) {
+	/* En smartphone mostramos el botón */
+    button#menu {
+        display: block;
+    }
+	nav#superior {
+        display: none;
+    }
+	nav#superior ul {
+        flex-direction: column;
+    }
+}
+button#menu {
+    display: none;
+}
+
+button#menu:focus + nav#superior {
+    display: block;
+}
+
+nav#superior ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav#superior ul a {
+    display: block;
+    width: 8em;
+    text-decoration: none;
+    border: 1px solid #BE353D;
+    padding: .3em 0;
+    text-align: center;
+    color: #FA453B;
+    background: #EF8E76;
+    transition: 1s all;
+    width: 100%;
+   
+}
+
+nav#superior ul a:hover {
+    background: #ec7b5f;
+}
+
+
