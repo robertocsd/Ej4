@@ -15,9 +15,38 @@
 img{
  border-radius: 7%;
 }
+.DIA>img{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1%;
+}
 .DIA>p{
     margin-left: 10%;
     margin-right: 10%;
+}
+.embed{
+    margin-left: 30%;
+    margin-right: 50%;
+}
+.video3{
+    margin-left: 30%;
+    margin-right: 50%;
+}
+.imagenes{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 15px;
+    margin-left: 10%;
+    height: 30%;
+    width: 40%;
+
+}
+
+.feo{
+
+    margin-left: 10%;
+
 }
 .DIA>h2{
     justify-self: center;
